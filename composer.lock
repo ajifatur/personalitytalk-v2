@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ajifatur/faturcms.git",
-                "reference": "16c47e9ac621952e5ae7bec9e11f4c47e757ef53"
+                "reference": "2314713578b638e9f39498cb5e7a3f8b7e0f70c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ajifatur/faturcms/zipball/16c47e9ac621952e5ae7bec9e11f4c47e757ef53",
-                "reference": "16c47e9ac621952e5ae7bec9e11f4c47e757ef53",
+                "url": "https://api.github.com/repos/ajifatur/faturcms/zipball/2314713578b638e9f39498cb5e7a3f8b7e0f70c5",
+                "reference": "2314713578b638e9f39498cb5e7a3f8b7e0f70c5",
                 "shasum": ""
             },
             "require": {
@@ -51,7 +51,7 @@
                 }
             ],
             "description": "Solusi CMS dengan Fitur Referral Terbaik",
-            "time": "2021-04-20T06:11:34+00:00"
+            "time": "2021-04-20T08:59:07+00:00"
         },
         {
             "name": "asm89/stack-cors",
