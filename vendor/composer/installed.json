@@ -1,17 +1,17 @@
 [
     {
         "name": "ajifatur/faturcms",
-        "version": "v1.0.0-beta",
-        "version_normalized": "1.0.0.0-beta",
+        "version": "v1.0.0",
+        "version_normalized": "1.0.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/ajifatur/faturcms.git",
-            "reference": "90dc821810811f4941da53ec088c9ed02bcea1e2"
+            "reference": "3cf158d1f07a32b6f7ab1d3ec588df301cbe58ba"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/ajifatur/faturcms/zipball/90dc821810811f4941da53ec088c9ed02bcea1e2",
-            "reference": "90dc821810811f4941da53ec088c9ed02bcea1e2",
+            "url": "https://api.github.com/repos/ajifatur/faturcms/zipball/3cf158d1f07a32b6f7ab1d3ec588df301cbe58ba",
+            "reference": "3cf158d1f07a32b6f7ab1d3ec588df301cbe58ba",
             "shasum": ""
         },
         "require": {
@@ -21,7 +21,7 @@
             "php": "^7.2",
             "simplesoftwareio/simple-qrcode": "^4.2"
         },
-        "time": "2021-04-23T03:01:25+00:00",
+        "time": "2021-04-23T03:51:53+00:00",
         "type": "library",
         "extra": {
             "laravel": {
