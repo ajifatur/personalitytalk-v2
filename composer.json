@@ -15,7 +15,7 @@
         "guzzlehttp/guzzle": "^6.3",
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
-        "plesk/composer-command-info": "^1.0"
+        "plesk/composer-command-info": "^1.1"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

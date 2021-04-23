@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1f8a4db7005a542512d2e56a4c5c6d25",
+    "content-hash": "8a81801c4ab6224fa1462ea6d022da9e",
     "packages": [
         {
             "name": "ajifatur/faturcms",
