@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fac50c72bbccbd58cec9090c05118c74",
+    "content-hash": "a2bf5abcd1fd548676d2285c59307fac",
     "packages": [
         {
             "name": "ajifatur/faturcms",
-            "version": "dev-master",
+            "version": "v1.0.0-beta",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ajifatur/faturcms.git",
-                "reference": "2314713578b638e9f39498cb5e7a3f8b7e0f70c5"
+                "reference": "90dc821810811f4941da53ec088c9ed02bcea1e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ajifatur/faturcms/zipball/2314713578b638e9f39498cb5e7a3f8b7e0f70c5",
-                "reference": "2314713578b638e9f39498cb5e7a3f8b7e0f70c5",
+                "url": "https://api.github.com/repos/ajifatur/faturcms/zipball/90dc821810811f4941da53ec088c9ed02bcea1e2",
+                "reference": "90dc821810811f4941da53ec088c9ed02bcea1e2",
                 "shasum": ""
             },
             "require": {
@@ -51,7 +51,7 @@
                 }
             ],
             "description": "Solusi CMS dengan Fitur Referral Terbaik",
-            "time": "2021-04-20T08:59:07+00:00"
+            "time": "2021-04-23T03:01:25+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -2442,6 +2442,41 @@
                 }
             ],
             "time": "2020-07-20T17:29:33+00:00"
+        },
+        {
+            "name": "plesk/composer-command-info",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/plesk/composer-command-info.git",
+                "reference": "1aed97d1b529407a8d9e835575651980a14e3e60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/plesk/composer-command-info/zipball/1aed97d1b529407a8d9e835575651980a14e3e60",
+                "reference": "1aed97d1b529407a8d9e835575651980a14e3e60",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1",
+                "ext-json": "*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "codeception/codeception": "^3.1",
+                "composer/composer": "^1.8"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Plesk\\ComposerCommandInfo\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Plesk\\ComposerCommandInfo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2019-09-18T10:10:43+00:00"
         },
         {
             "name": "psr/container",
@@ -7599,9 +7634,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "ajifatur/faturcms": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

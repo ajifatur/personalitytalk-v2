@@ -163,6 +163,7 @@ class ComposerStaticInitec19278c72fa4724d7a603a850898f9e
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
+            'Plesk\\ComposerCommandInfo\\' => 26,
             'PhpParser\\' => 10,
             'PhpOption\\' => 10,
             'PhpOffice\\PhpSpreadsheet\\' => 25,
@@ -428,6 +429,10 @@ class ComposerStaticInitec19278c72fa4724d7a603a850898f9e
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
+        ),
+        'Plesk\\ComposerCommandInfo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/plesk/composer-command-info/src',
         ),
         'PhpParser\\' => 
         array (
@@ -4644,6 +4649,15 @@ class ComposerStaticInitec19278c72fa4724d7a603a850898f9e
         'PhpParser\\Parser\\Tokens' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Parser/Tokens.php',
         'PhpParser\\PrettyPrinterAbstract' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinterAbstract.php',
         'PhpParser\\PrettyPrinter\\Standard' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/PrettyPrinter/Standard.php',
+        'Plesk\\ComposerCommandInfo\\Command\\CommandInfo' => __DIR__ . '/..' . '/plesk/composer-command-info/src/Command/CommandInfo.php',
+        'Plesk\\ComposerCommandInfo\\Command\\CommandInfoFactory' => __DIR__ . '/..' . '/plesk/composer-command-info/src/Command/CommandInfoFactory.php',
+        'Plesk\\ComposerCommandInfo\\Command\\CommandInfoInterface' => __DIR__ . '/..' . '/plesk/composer-command-info/src/Command/CommandInfoInterface.php',
+        'Plesk\\ComposerCommandInfo\\Command\\NullCommandInfo' => __DIR__ . '/..' . '/plesk/composer-command-info/src/Command/NullCommandInfo.php',
+        'Plesk\\ComposerCommandInfo\\Operation\\BaseOperation' => __DIR__ . '/..' . '/plesk/composer-command-info/src/Operation/BaseOperation.php',
+        'Plesk\\ComposerCommandInfo\\Operation\\DependenciesSolvingOperation' => __DIR__ . '/..' . '/plesk/composer-command-info/src/Operation/DependenciesSolvingOperation.php',
+        'Plesk\\ComposerCommandInfo\\Operation\\OperationInterface' => __DIR__ . '/..' . '/plesk/composer-command-info/src/Operation/OperationInterface.php',
+        'Plesk\\ComposerCommandInfo\\Operation\\OperationStatusTrait' => __DIR__ . '/..' . '/plesk/composer-command-info/src/Operation/OperationStatusTrait.php',
+        'Plesk\\ComposerCommandInfo\\Plugin' => __DIR__ . '/..' . '/plesk/composer-command-info/src/Plugin.php',
         'Prophecy\\Argument' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument.php',
         'Prophecy\\Argument\\ArgumentsWildcard' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/ArgumentsWildcard.php',
         'Prophecy\\Argument\\Token\\AnyValueToken' => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy/Argument/Token/AnyValueToken.php',
