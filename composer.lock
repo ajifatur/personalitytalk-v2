@@ -51,6 +51,10 @@
                 }
             ],
             "description": "Solusi CMS dengan Fitur Referral Terbaik",
+            "support": {
+                "issues": "https://github.com/ajifatur/faturcms/issues",
+                "source": "https://github.com/ajifatur/faturcms/tree/v1.0.0"
+            },
             "time": "2021-04-23T03:51:53+00:00"
         },
         {
