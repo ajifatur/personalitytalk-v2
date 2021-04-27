@@ -1,18 +1,10 @@
-@extends('faturcms::auth.layout')
+@extends('template.main')
 
 @section('title', 'Login')
 
 @section('content')
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-light fixed-top bg-white shadow-sm justify-content-center">
-      <a class="navbar-brand" href="{{ route('site.home') }}">
-        <img src="{{ asset('assets/images/logo/'.setting('site.logo')) }}" class="img-fluid" width="200" alt="logo">
-      </a>
-    </nav>
-    <!-- /Navbar -->
-
-    <div class="main-wrapper mt-5 mt-lg-0">
+    <div class="main-wrapper my-lg-5 my-3">
         <div class="auth-wrapper d-flex no-block justify-content-center align-items-center">
             <div class="container">
                 <div class="row">
@@ -22,11 +14,12 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="wrapper">
+                        <div class="wrapper d-flex align-items-center">
                             <div class="card border-0 shadow-sm rounded-2">
-                                <div class="card-header pt-4 bg-transparent text-left">
-                                    <h5 class="h2">Selamat Datang Kembali :)</h5>
-                                    <p class="m-0">Untuk tetap terhubung dengan kami, silakan login dengan informasi pribadi Anda melalui email dan kata sandi 🔔</p>
+                                <div class="card-header text-center pt-4 bg-transparent mx-4">
+                                    <img width="200" class="mb-3" src="{{ asset('assets/images/logo/1598935898-logo.png')}}">
+                                    <h5 class="h2 mb-0">Selamat Datang</h5>
+                                    <p class="m-0">Untuk tetap terhubung dengan kami, silakan login dengan informasi pribadi Anda melalui Username dan Password 🔔</p>
                                 </div>
                                 <div class="card-body">
                                     <form class="login-form" action="{{ route('auth.postlogin') }}" method="post">
@@ -85,5 +78,24 @@
             </div>
         </div>
     </div>
-
+@endsection
+@section('css-extra')
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+@endsection
+@section('js-extra')
+<script type="text/javascript">
+$(document).on("click", ".btn-toggle-password", function(e){
+    e.preventDefault();
+    if(!$(this).hasClass("show")){
+        $(this).parents(".input-group").find("input").attr("type","text");
+        $(this).find(".fa").removeClass("fa-eye").addClass("fa-eye-slash");
+        $(this).addClass("show");
+    }
+    else{
+        $(this).parents(".input-group").find("input").attr("type","password");
+        $(this).find(".fa").removeClass("fa-eye-slash").addClass("fa-eye");
+        $(this).removeClass("show");
+    }
+});
+</script>
 @endsection

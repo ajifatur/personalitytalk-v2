@@ -23,15 +23,17 @@
 		      <span class="badge bg-theme-1 mb-3 p-2">Karir</span>
 		      <h2 class="mb-3">{{ $karir->karir_title }}</h2>
 		      <p class="m-0">Oleh : {{ $karir->nama_user }}<br> Terakhir diperbarui {{ generate_date($karir->karir_at) }}</p>
+		      <a class="btn btn-primary mt-3 rounded d-block d-lg-none" href="{{ $karir->karir_url }}" target="_blank">Daftar Karir</a>
 		    </div>
 		    <div class="col-lg-4 order-1 order-lg-2 stick sticky-top px-0 px-md-3">
 		      <div class="sticky-sidebar">
 		        <div class="card rounded-2 border-0 shadow-sm mb-3 mb-lg-0">
 		          <img class="card-img-top" src="{{ image('assets/images/karir/'.$karir->karir_gambar, 'karir') }}">
-		          <div class="card-body d-none d-lg-block">
+		          <div class="card-body d-none d-lg-block">		          	
+		            <span class="badge bg-theme-1 mb-2 p-2 text-white">Karir</span>
 		            <h5 class="mb-3">{{ $karir->karir_title }}</h5>
 		            <p class="m-0">Oleh : {{ $karir->nama_user }}<br> Terakhir diperbarui {{ generate_date($karir->karir_at) }}</p>
-		            <span class="badge bg-theme-1 mt-3 p-2 text-white">Karir</span>
+		            <a class="btn btn-primary mt-3 rounded" href="{{ $karir->karir_url }}" target="_blank">Daftar Karir</a>
 		          </div>
 		        </div>
 		      </div>
@@ -52,7 +54,6 @@
             <div class="ql-editor">{!! html_entity_decode($karir->konten) !!}</div>
           </div>
         </div>
-        <a class="btn btn-primary" href="{{ $karir->karir_url }}" target="_blank">Daftar Karir</a>
       </div>
   </div>
 </section>
