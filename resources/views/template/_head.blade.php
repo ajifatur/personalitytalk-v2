@@ -41,6 +41,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css" integrity="sha256-8g4waLJVanZaKB04tvyhKu2CZges6pA5SUelZAux/1U=" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" type="text/css"/>
+    
+    <!-- Google Analytics -->
+    {!! html_entity_decode(setting('site.google_analytics')) !!}
+    
 	<style type="text/css">
 		/* Sidebar */
 		#sidebar {padding: 1rem;}
