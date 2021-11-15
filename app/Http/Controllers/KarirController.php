@@ -16,7 +16,10 @@ class KarirController extends Controller
     public function index(Request $request)
     {		
         // Referral
-        referral($request->query('ref'), 'site.karir.index');
+		if($request->query('page') !== null)
+        	referral($request->query('ref'), 'site.karir.index', ['page' => $request->query('page')]);
+		else
+        	referral($request->query('ref'), 'site.karir.index');
 
         // Data karir
         $karir = Karir::join('users','karir.author','=','users.id_user')->orderBy('karir_at','desc')->paginate(12);
