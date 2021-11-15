@@ -16,7 +16,10 @@ class ProgramController extends Controller
     public function index(Request $request, $category)
     {
         // Referral
-        referral($request->query('ref'), 'site.program.index', ['category' => $category]);
+		if($request->query('page') !== null)
+        	referral($request->query('ref'), 'site.program.index', ['category' => $category, 'page' => $request->query('page')]);
+		else
+        	referral($request->query('ref'), 'site.program.index', ['category' => $category]);
 
 		// Data kategori
 		$kategori = KategoriProgram::where('slug','=',$category)->firstOrFail();
