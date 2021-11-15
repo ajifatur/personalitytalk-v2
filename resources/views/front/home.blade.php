@@ -6,17 +6,33 @@
 <section id="main-image">
 	<div class="container px-sm-0">
 		<div class="sl-main-image">
-			@foreach ($slider as $data)
-				<div>
-					<a href="{{ $data->slider_url }}">
-						<div class="w-100">
-							<div class="position-relative">
-								<img src="{{ image('assets/images/slider/'.$data->slider, 'slider') }}" alt="Slider">
-							</div>
+			<div>
+				<a href="javascript:void(0)">
+					<div class="w-100">
+						<div class="position-relative">
+							<img src="{{ asset('assets/images/slider/SLIDER 1.jpg') }}" alt="Slider">
 						</div>
-					</a>
-				</div>
-			@endforeach
+					</div>
+				</a>
+			</div>
+			<div>
+				<a href="/register">
+					<div class="w-100">
+						<div class="position-relative">
+							<img src="{{ asset('assets/images/slider/SLIDER 2.jpg') }}" alt="Slider">
+						</div>
+					</div>
+				</a>
+			</div>
+			<div>
+				<a href="/register">
+					<div class="w-100">
+						<div class="position-relative">
+							<img src="{{ asset('assets/images/slider/SLIDER 3.jpg') }}" alt="Slider">
+						</div>
+					</div>
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -122,7 +138,7 @@
 <!-- /Kategori -->
 
 <!-- Deskripsi -->
-<section id="simple-profile">
+<section id="section-profile">
 	<div class="container h-100 section-block">
 		<div class="row h-100">
 			<div class="col-12 my-auto">
@@ -456,7 +472,7 @@ $(".nicescroll-box").niceScroll(".wrap");  // hwscroll!!
 		#main-image .sl-main-image .slick-prev {left: 10px!important;}
 		#main-image .sl-main-image .slick-next {right: 10px!important;}
 	}
-	#main-image, #simple-profile, #online-class, #online-course, #workshop, #sertifikasi, #career, #partner {margin-top: 2.1875rem;}
+	#main-image, #section-profile, #online-class, #online-course, #workshop, #sertifikasi, #career, #partner,  #e-learning{margin-top: 2.1875rem;}
 	#main-image .sl-main-image .slick-dots li.slick-active button::before {color: #fb8312!important;}
 	.slick-slider .slick-arrow.slick-prev, .slick-slider .slick-arrow.slick-next {background-color: #fb8312!important;}
 	.slick-slider .slick-arrow.slick-prev:hover, .slick-slider .slick-arrow.slick-next:hover {background-color: #c16c1c!important;}
