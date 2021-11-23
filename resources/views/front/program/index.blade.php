@@ -7,8 +7,8 @@
 <section id="breadcrumb-container">
 	<div class="container">
 		<nav aria-label="breadcrumb">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="{{ route('site.home') }}"><i data-feather="home"></i></a></li>
+			<ol class="breadcrumb p-3">
+				<li class="breadcrumb-item"><a href="{{ route('site.home') }}"><i class="text-body bi bi-house-fill"></i></a></li>
 				<li class="breadcrumb-item active" aria-current="page">{{ $kategori }}</li>
 			</ol>
 		</nav>
@@ -40,7 +40,7 @@
 							</a>
 							<div class="card-body">
 								<a class="link-primary" href="{{ route('site.program.detail', ['permalink' => $data->program_permalink]) }}"><h5 class="card-title">{{ $data->program_title }}</h5></a>
-								<p class="card-text">{!! substr(strip_tags(html_entity_decode($data->konten)),0,100) !!}... <a class="link-primary" style="display: inline;" href="{{ route('site.program.detail', ['permalink' => $data->program_permalink]) }}">Selengkapnya ></a></p>	
+								<p class="card-text">{!! substr(strip_tags(html_entity_decode($data->konten)),0,100) !!}... <a class="link-primary fw-bold" href="{{ route('site.program.detail', ['permalink' => $data->program_permalink]) }}">Selengkapnya <i class="bi bi-arrow-right"></i></a></p>	
 							</div>
 						</div>
 					</div>

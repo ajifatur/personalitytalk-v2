@@ -1,14 +1,14 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light py-2 fixed-top shadow-sm">
-        <div class="container"> <button type="button" id="sidebarCollapse" class="navbar-toggler"><i class="ti-menu"></i></button>
+    <nav class="navbar navbar-expand-lg navbar-light py-2 fixed-top bg-white shadow-sm">
+        <div class="container">
 			<a class="navbar-brand mb-0" href="{{ route('site.home') }}"><img src="{{ asset('assets/images/logo/'.setting('site.logo')) }}" alt="Logo PersonalityTalk"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<div class="header-right ml-auto">
-					<ul class="navbar-nav n-log">
-						<li class="nav-item"> <a class="btn btn-default btn-borderless" href="/">Beranda</a> </li>
+				<div class="header-right ms-auto">
+					<ul class="navbar-nav align-items-lg-center n-log">
+						<li class="nav-item"><a class="nav-link active" href="/">Beranda</a> </li>
 						<li class="nav-item dropdown">
-							<a class="btn btn-default btn-borderless dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Program</a>
+							<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Program</a>
 							<div class="dropdown-menu dropdown-menu-right">
 								<a href="{{ Request::path() == '/' ? '#online-class' : route('site.program.index', ['category' => 'e-learning']) }}" class="dropdown-item" type="button">E-Learning</a>
 								<a href="{{ Request::path() == '/' ? '#online-course' : route('site.program.index', ['category' => 'online-course']) }}" class="dropdown-item" type="button">Online Course</a>
@@ -19,16 +19,16 @@
 								<a href="{{ route('site.program.index', ['category' => 'konseling-psikoterapi']) }}" class="dropdown-item" type="button">Konseling & Psikoterapi</a>
 							</div>
 						</li>
-						<li class="nav-item"> <a class="btn btn-default btn-borderless" href="https://karir.psikologanda.com/login" target="_blank">HRD</a> </li>
-						<li class="nav-item"> <a class="btn btn-default btn-borderless" href="{{ route('site.psikolog.index') }}">Psikolog</a> </li>
-						<li class="nav-item"> <a class="btn btn-default btn-borderless" href="{{ Request::path() == '/' ? '#career' : route('site.karir.index') }}">Karir</a> </li>
-						<li class="nav-item"> <a class="btn btn-default ml-2 rounded px-5" href="https://tes.psikologanda.com/login" target="_blank">Tes&nbsp;Online</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="https://karir.psikologanda.com/login" target="_blank">HRD</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="{{ route('site.psikolog.index') }}">Psikolog</a> </li>
+						<li class="nav-item"> <a class="nav-link" href="{{ Request::path() == '/' ? '#career' : route('site.karir.index') }}">Karir</a> </li>
+						<li class="nav-item"> <a class="btn btn-outline-dark ms-0 ms-lg-2 px-3 mb-2 mb-lg-0 d-grid" href="https://tes.psikologanda.com/login" target="_blank">Tes&nbsp;Online</a></li>
 						@if(Auth::guest())
-						<li class="nav-item"> <a class="btn btn-primary ml-2 rounded" href="{{ route('auth.login', ['ref' => $_GET['ref']]) }}">Masuk</a> </li>
-						<li class="nav-item"> <a class="btn btn-secondary ml-2 rounded" href="{{ route('auth.register', ['ref' => $_GET['ref']]) }}">Daftar</a> </li>
+						<li class="nav-item"> <a class="btn btn-primary ms-0 ms-lg-2 px-3 mb-2 mb-lg-0 d-grid" href="{{ route('auth.login', ['ref' => $_GET['ref']]) }}">Masuk</a> </li>
+						<li class="nav-item"> <a class="btn btn-secondary ms-0 ms-lg-2 px-3 mb-2 mb-lg-0 d-grid" href="{{ route('auth.register', ['ref' => $_GET['ref']]) }}">Daftar</a> </li>
 						@else
 						<li class="nav-item dropdown">
-							<a class="nav-link account dropdown-toggle d-flex align-items-center" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link account dropdown-toggle d-flex align-items-center" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							  <img src="{{ image('assets/images/users/'.Auth::user()->foto, 'user') }}" alt="user" class="rounded-circle" width="31">
 							</a>
 							<ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarScrollingDropdown">
@@ -55,4 +55,4 @@
 		</div>
 	</nav>
 </header>
-<div style="height: 4.8em;"></div>
+<div style="height: 4.2em;"></div>

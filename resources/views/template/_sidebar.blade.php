@@ -1,4 +1,4 @@
-<nav id="sidebar" class="sidebar-wrapper">
+<nav id="sidebar" class="sidebar-wrapper d-none">
     <div style="height: 4.2em;"></div>
     <ul class="list-unstyled sidebar-menu">
         @if(Auth::guest())

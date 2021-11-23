@@ -7,9 +7,9 @@
 <section id="breadcrumb-container">
 	<div class="container">
 		<nav aria-label="breadcrumb">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="{{ route('site.home') }}"><i data-feather="home"></i></a></li>
-				<li class="breadcrumb-item"><a href="{{ route('site.program.index', ['category' => $program->slug]) }}">{{ $program->kategori }}</a></li>
+			<ol class="breadcrumb p-3">
+				<li class="breadcrumb-item"><a href="{{ route('site.home') }}" class="text-body"><i class="bi bi-house-fill"></i></a></li>
+				<li class="breadcrumb-item"><a href="{{ route('site.program.index', ['category' => $program->slug]) }}" class="text-body">{{ $program->kategori }}</a></li>
 				<li class="breadcrumb-item active" aria-current="page">{{ $program->program_title }}</li>
 			</ol>
 		</nav>
