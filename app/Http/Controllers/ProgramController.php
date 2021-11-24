@@ -49,9 +49,13 @@ class ProgramController extends Controller
         // Data program
         $program = Program::join('users','program.author','=','users.id_user')->join('kategori_program','program.program_kategori','=','kategori_program.id_kp')->where('program_permalink','=',$permalink)->firstOrFail();
 
+        // Data program list
+        $program_list = Program::join('users','program.author','=','users.id_user')->join('kategori_program','program.program_kategori','=','kategori_program.id_kp')->where('program_kategori',$program->id_kp)->orderBy('program_at','asc')->limit(5)->get(); 
+
         // View
         return view('front.program.detail', [
-            'program' => $program
+            'program' => $program,
+            'program_list' => $program_list
         ]);
     }
 }

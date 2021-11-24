@@ -7,30 +7,30 @@
 <section id="breadcrumb-container">
 	<div class="container">
 		<nav aria-label="breadcrumb">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="{{ route('site.home') }}"><i data-feather="home"></i></a></li>
-				<li class="breadcrumb-item"><a href="{{ route('site.karir.index') }}">Karir</a></li>
+			<ol class="breadcrumb p-3">
+				<li class="breadcrumb-item"><a href="{{ route('site.home') }}" class="link-primary"><i class="bi bi-house-fill"></i></a></li>
+				<li class="breadcrumb-item"><a href="{{ route('site.karir.index') }}" class="link-primary">Karir</a></li>
 				<li class="breadcrumb-item active" aria-current="page">{{ $karir->karir_title }}</li>
 			</ol>
 		</nav>
 	</div>
 </section>
 <section>
-	<div class="bg-theme-2">
+	<div class="bg-secondary">
 		<div class="container pt-0 pt-md-4 pb-4 mb-4 mb-lg-0">
 		  <div class="row">
 		    <div class="col-lg-8 order-2 order-lg-1 text-white">
-		      <span class="badge bg-theme-1 mb-3 p-2">Karir</span>
+		      <span class="badge bg-primary mb-3 p-2">Karir</span>
 		      <h2 class="mb-3">{{ $karir->karir_title }}</h2>
 		      <p class="m-0">Oleh : {{ $karir->nama_user }}<br> Terakhir diperbarui {{ generate_date($karir->karir_at) }}</p>
 		      <a class="btn btn-primary mt-3 rounded d-block d-lg-none" href="{{ $karir->karir_url }}" target="_blank">Daftar Karir</a>
 		    </div>
-		    <div class="col-lg-4 order-1 order-lg-2 stick sticky-top px-0 px-md-3">
+		    <div class="col-lg-4 order-1 order-lg-2 stick sticky-top px-0 px-md-3" style="height:1px">
 		      <div class="sticky-sidebar">
 		        <div class="card rounded-2 border-0 shadow-sm mb-3 mb-lg-0">
 		          <img class="card-img-top" src="{{ image('assets/images/karir/'.$karir->karir_gambar, 'karir') }}">
 		          <div class="card-body d-none d-lg-block">		          	
-		            <span class="badge bg-theme-1 mb-2 p-2 text-white">Karir</span>
+		            <span class="badge bg-primary mb-2 p-2 text-white">Karir</span>
 		            <h5 class="mb-3">{{ $karir->karir_title }}</h5>
 		            <p class="m-0">Oleh : {{ $karir->nama_user }}<br> Terakhir diperbarui {{ generate_date($karir->karir_at) }}</p>
 		            <a class="btn btn-primary mt-3 rounded" href="{{ $karir->karir_url }}" target="_blank">Daftar Karir</a>

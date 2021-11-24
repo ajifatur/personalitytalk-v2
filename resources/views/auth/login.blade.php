@@ -55,9 +55,9 @@
                                         </div>
                                     </div>
                                     <div class="d-grid gap-2">
-                                        <button type="submit" class="btn btn-theme-1 rounded px-4 shadow-sm btn-block">Masuk</button>
+                                        <button type="submit" class="btn btn-primary rounded px-4 btn-block">Masuk</button>
                                         <p class="my-2 text-center">Belum punya akun?</p>
-                                        <a href="{{ route('auth.register') }}" class="btn btn-light rounded px-4 shadow-sm btn-block">Daftar</a>
+                                        <a href="{{ route('auth.register') }}" class="btn btn-secondary rounded px-4 btn-block">Daftar</a>
                                     </div>
                                 </form>
                             </div>

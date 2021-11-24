@@ -8,7 +8,7 @@
 	<div class="container">
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb p-3">
-				<li class="breadcrumb-item"><a href="{{ route('site.home') }}"><i class="text-body bi bi-house-fill"></i></a></li>
+				<li class="breadcrumb-item"><a href="{{ route('site.home') }}" class="link-primary"><i class="bi bi-house-fill"></i></a></li>
 				<li class="breadcrumb-item active" aria-current="page">Karir</li>
 			</ol>
 		</nav>
@@ -49,6 +49,7 @@
 			</div>
 			@endif
 		</div>
+		<div class="d-flex justify-content-center">{!! $karir->links() !!}</div>
     </div>
   </div>
 </section>

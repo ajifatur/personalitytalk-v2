@@ -23,7 +23,7 @@
 				</div>
 				<div class="card-body">
 					<div class="text-center mb-3">
-                    	<a href="#" target="_blank" class="btn btn-theme-1 d-grid"><i class="bi bi-download me-2"></i>Download Tutorial Pendaftaran Member {{ setting('site.name') }}</a>
+                    	<a href="#" target="_blank" class="btn btn-primary d-grid"><i class="bi bi-download me-2"></i>Download Tutorial Pendaftaran Member {{ setting('site.name') }}</a>
                     </div>
 					<form method="post" action="{{ route('auth.postregister') }}">
 						{{ csrf_field() }}
@@ -133,7 +133,7 @@
 						</div>
 						<div class="form-group mb-3">
 							<div<div>
-								<button type="submit" class="btn btn-theme-1"><i class="bi bi-check mr-1"></i> Daftar</button>
+								<button type="submit" class="btn btn-primary"><i class="bi bi-check mr-1"></i> Daftar</button>
 							</div>
 						</div>
 					  </div>

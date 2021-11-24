@@ -143,7 +143,7 @@
 		<div class="row h-100">
 			<div class="col-12 my-auto">
 				<div class="media d-block d-lg-flex align-items-center text-center text-lg-start">
-					<div class="p-3 rounded-2 bg-theme-1 me-3 mb-3 mb-lg-0">
+					<div class="p-3 rounded-2 bg-primary me-3 mb-3 mb-lg-0">
 						<img width="100" src="{{asset('assets/images/logo/1598935068-icon.png')}}" style="filter: brightness(0) invert(1);">
 					</div>
 					<div class="media-body">
@@ -460,27 +460,5 @@ $('#mitra').slick({
 @section('css-extra')
 <style type="text/css">
 	body{background-color: var(--white)}
-	#popular-category > .container > .row > div a {background-color: #fb8312!important;}
-	#popular-category > .container > .row > div a:hover {background-color: #c16c1c!important;}
-	@media (max-width: 991px) {
-		#main-image .sl-main-image .slick-prev {left: 10px!important;}
-		#main-image .sl-main-image .slick-next {right: 10px!important;}
-	}
-	#main-image, #section-profile, #online-class, #online-course, #workshop, #sertifikasi, #career, #partner,  #e-learning, #simple-profile, #see-more{margin-top: 2.1875rem;}
-	#main-image .sl-main-image .slick-dots li.slick-active button::before {color: #fb8312!important;}
-	.slick-slider .slick-arrow.slick-prev, .slick-slider .slick-arrow.slick-next {background-color: #fb8312!important;}
-	.slick-slider .slick-arrow.slick-prev:hover, .slick-slider .slick-arrow.slick-next:hover {background-color: #c16c1c!important;}
-	.nav-tabs .nav-item a.active, .nav-tabs .nav-item a:hover {color: #fb8312!important; border-bottom: 3px solid #fb8312;}
-	#special-program .view-more, #popular-webinar .view-more, #skill-course .view-more, #discount-course .view-more, #popular-partner .view-more, #certification-advisor .view-more, #popular-certification .view-more, #popular-course .view-more, #popular-microlearning .view-more {color: #fb8312!important;}
-	#special-program .view-more:hover, #popular-webinar .view-more:hover, #skill-course .view-more:hover, #discount-course .view-more:hover, #popular-partner .view-more:hover, #certification-advisor .view-more:hover, #popular-certification .view-more:hover, #popular-course .view-more:hover, #popular-microlearning .view-more:hover {text-decoration: underline;}
-	.shadow-qbs{box-shadow: 0px 2px 3px rgb(0 0 0 / 15%); -webkit-box-shadow: 0px 2px 3px rgb(0 0 0 / 15%);}
-	.rounded-qbs{border-radius: 10px;}
-	.sl-main-image, .sl-course, #mitra{display: none}
-	.sl-course.slick-initialized,
-	.sl-main-image.slick-initialized,
-	#mitra.slick-initialized{display: block}
-	@media (max-width: 767.98px) { 
-
-	}
 </style>
 @endsection

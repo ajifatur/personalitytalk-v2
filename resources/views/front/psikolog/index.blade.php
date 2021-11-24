@@ -4,12 +4,11 @@
 
 @section('content')
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 <section id="breadcrumb-container">
 	<div class="container">
 		<nav aria-label="breadcrumb">
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="{{ route('site.home') }}"><i data-feather="home"></i></a></li>
+			<ol class="breadcrumb p-3">
+				<li class="breadcrumb-item"><a href="{{ route('site.home') }}" class="link-primary"><i class="bi bi-house-fill"></i></a></li>
 				<li class="breadcrumb-item active" aria-current="page">Psikolog</li>
 			</ol>
 		</nav>
@@ -37,7 +36,7 @@
 					<div class="col-lg-3 col-md-6 mb-3">
 						<div class="card border-0 shadow-sm rounded-2">
 							<div class="card-header bg-transparent d-flex align-items-center">
-								<div class="rounded-circle flex-shrink-0 mr-3 text-center text-white" style="background-color: var(--color-{{ $data->kategori_psikolog }}); width: 70px; height: 70px">
+								<div class="rounded-circle flex-shrink-0 me-3 text-center text-white" style="background-color: var(--color-{{ $data->kategori_psikolog }}); width: 70px; height: 70px">
 									<h1 style="margin-top: .25em">{{ ucfirst(substr($data->nama_psikolog,0,1)) }}</h1>
 								</div>
 								<div>
@@ -46,10 +45,10 @@
 								</div>
 							</div>
 							<div class="card-body">
-								<p><i class="fa fa-barcode" style="position: absolute; margin-top: 2px"></i> <span class="ml-4">{{ $data->kode_psikolog }}</span></p>
-								<p><i class="fa fa-home" style="position: absolute; margin-top: 2px"></i> <span class="ml-4">{{ $data->alamat_psikolog }}</span></p>
-								<p><i class="fab fa-whatsapp" style="position: absolute; margin-top: 2px"></i> <a class="ml-4" href="https://wa.me/{{ $data->nomor_telepon_psikolog }}?text=Hai%20Saya%20tertarik%20dengan%20PersonalityTalk" target="_blank">Hubungi Saya</a></p>
-								<p><i class="fab fa-instagram" style="position: absolute; margin-top: 2px"></i> <a class="ml-4" href="https://instagram.com/{{ $data->instagram_psikolog }}" target="_blank">{{ $data->instagram_psikolog }}</a></p>
+								<p><i class="bi bi-upc-scan" style="position: absolute; margin-top: 2px"></i> <span class="ms-4">{{ $data->kode_psikolog }}</span></p>
+								<p><i class="bi bi-house-door" style="position: absolute; margin-top: 2px"></i> <span class="ms-4">{{ $data->alamat_psikolog }}</span></p>
+								<p><i class="bi bi-whatsapp" style="position: absolute; margin-top: 2px"></i> <a class="ms-4 link-primary" href="https://wa.me/{{ $data->nomor_telepon_psikolog }}?text=Hai%20Saya%20tertarik%20dengan%20PersonalityTalk" target="_blank">Hubungi Saya</a></p>
+								<p><i class="bi bi-instagram" style="position: absolute; margin-top: 2px"></i> <a class="ms-4 link-primary" href="https://instagram.com/{{ $data->instagram_psikolog }}" target="_blank">{{ $data->instagram_psikolog }}</a></p>
 							</div>
 						</div>
 					</div>
