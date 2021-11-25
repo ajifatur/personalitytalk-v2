@@ -2,7 +2,6 @@
 
 @section('content')
 
-<!-- Slider -->
 <section id="main-image">
 	<div class="container px-sm-0">
 		<div class="sl-main-image">
@@ -36,9 +35,6 @@
 		</div>
 	</div>
 </section>
-<!-- /Slider -->
-
-<!-- Kategori -->
 <section id="category">
 	<div class="container">
 		<div class="row justify-content-center">
@@ -135,9 +131,6 @@
 		</div>
 	</div>
 </section>
-<!-- /Kategori -->
-
-<!-- Deskripsi -->
 <section id="section-profile">
 	<div class="container h-100 section-block">
 		<div class="row h-100">
@@ -155,9 +148,6 @@
 		</div>
 	</div>
 </section>
-<!-- /Deskripsi -->
-
-<!-- E-Learning -->
 <section id="e-learning">
 	<div class="container section-block">
 		<div class="row pl-0">
@@ -198,8 +188,6 @@
 		</div>
 	</div>
 </section>
-<!-- /E-Learning -->
-
 <section id="online-course">
 	<div class="container section-block">
 		<div class="row pl-0">
