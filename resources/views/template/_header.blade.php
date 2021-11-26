@@ -20,7 +20,7 @@
 							</div>
 						</li>
 						<li class="nav-item"> <a class="nav-link" href="https://karir.psikologanda.com/login" target="_blank">HRD</a> </li>
-						<li class="nav-item"> <a class="nav-link {{ strpos(Request::url(), '/psikolog') ? 'active' : '' }}" href="{{ route('site.psikolog.index') }}">Psikolog</a> </li>
+						<li class="nav-item"> <a class="nav-link {{ is_int(strpos(Request::url(), route('site.psikolog.index'))) ? 'active' : '' }}" href="{{ route('site.psikolog.index') }}">Psikolog</a> </li>
 						<li class="nav-item"> <a class="nav-link {{ strpos(Request::url(), '/karir') ? 'active' : '' }}" href="{{ Request::path() == '/' ? '#career' : route('site.karir.index') }}">Karir</a> </li>
 						<li class="nav-item"> <a class="btn btn-outline-primary ms-0 ms-lg-2 px-3 mb-2 mb-lg-0 d-grid" href="https://tes.psikologanda.com/login" target="_blank">Tes&nbsp;Online</a></li>
 						@if(Auth::guest())
