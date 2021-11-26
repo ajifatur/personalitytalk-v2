@@ -17,7 +17,7 @@
                         <div class="card border-0 shadow-sm rounded-2">
                             <div class="card-header text-center pt-4 bg-transparent mx-4">
                                 <img width="200" class="mb-3" src="{{ asset('assets/images/logo/1598935898-logo.png')}}">
-                                <h5 class="h2 mb-0">Selamat Datang</h5>
+                                <h2>Selamat Datang</h2>
                                 <p class="m-0">Untuk tetap terhubung dengan kami, silakan login dengan informasi pribadi Anda melalui Username dan Password 🔔</p>
                             </div>
                             <div class="card-body">
@@ -28,7 +28,7 @@
                                         {{ $message }}
                                     </div>
                                     @endif
-                                    <div class="form-group  mb-4">
+                                    <div class="form-group mb-4">
                                         <label class="control-label">Username / Email</label>
                                         <div class="input-group">
                                             <span class="input-group-text {{ $errors->has('username') ? 'border-danger' : '' }}"><i class="bi bi-person-fill"></i></span>
