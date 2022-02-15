@@ -66,7 +66,7 @@
 		url: "https://karir.psikologanda.com/api/vacancy/{{ $permalink }}",
 		success: function(response) {
 			$("[data-pt=title]").text(response.title);
-			$("[data-pt=description]").text(response.description);
+			$("[data-pt=description]").html(response.description);
 			$("[data-pt=image]").attr("src",response.image);
 			$("[data-pt=url]").attr("href","https://karir.psikologanda.com/lowongan/" + response.url);
 			$("[data-pt=author]").text(response.author);
