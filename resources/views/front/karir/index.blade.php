@@ -39,7 +39,7 @@
 <script>
 	$.ajax({
 		type: "get",
-		url: "https://karir.psikologanda.com/api/vacancy",
+		url: "https://karir.psikologanda.com/api/vacancy?status=active",
 		success: function(response) {
 			var html = '';
 			for(var i=0; i<response.length; i++) {
