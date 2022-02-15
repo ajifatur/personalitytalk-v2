@@ -313,7 +313,7 @@
 		</div>
 	</div>
 </section>
-<section id="career">
+<section id="career" class="d-none">
 	<div class="container section-block">
 		<div class="row pl-0">
 			<div class="col-12 col-lg-3 d-flex" data-aos="fade-right">
@@ -325,8 +325,8 @@
 			<div class="col-12 col-lg-9">
 				<div class="py-4">
 					<!-- <div class="spinner-border mx-auto" role="status"><span class="sr-only">Loading...</span></div> -->
-					<div class="sl-course sl-card card-view2" data-count="">
-						@foreach($karir as $data)
+					<div class="sl-card card-view2 psikologanda-karir" data-count="">
+						<!-- @foreach($karir as $data)
 						<div>
 							<div class="card border-0 rounded-2 shadow-sm">
 								<a href="/karir/{{ $data->karir_permalink }}">
@@ -346,7 +346,7 @@
 								</div>
 							</div>
 						</div>
-						@endforeach
+						@endforeach -->
 					</div>
 				</div>
 			</div>
@@ -443,6 +443,7 @@ $('#mitra').slick({
 });
 
 </script>
+
 @endsection
 
 @section('css-extra')

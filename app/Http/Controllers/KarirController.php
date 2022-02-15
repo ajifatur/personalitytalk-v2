@@ -43,12 +43,9 @@ class KarirController extends Controller
         // Referral
         referral($request->query('ref'), 'site.karir.detail', ['permalink' => $permalink]);
 
-        // Data karir
-        $karir = Karir::join('users','karir.author','=','users.id_user')->where('karir_permalink','=',$permalink)->firstOrFail();
-
         // View
         return view('front.karir.detail', [
-            'karir' => $karir
+            'permalink' => $permalink
         ]);
     }
 }
