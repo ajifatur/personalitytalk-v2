@@ -115,7 +115,7 @@
 						  	<div>
                                 <div class="input-group">
 								  	<input type="password" name="password" class="form-control {{ $errors->has('password') ? 'border-danger' : '' }}">
-									<button class="input-group-text btn btn-light btn-toggle-password border {{ $errors->has('password') ? 'border-danger' : '' }}"><i class="bi bi-eye-fill"></i></button>
+									<a href="#" class="input-group-text btn btn-light btn-toggle-password border {{ $errors->has('password') ? 'border-danger' : '' }}"><i class="bi bi-eye-fill"></i></a>
                                 </div>
 								@if($errors->has('password'))
 								<div class="small text-danger mt-1">{{ ucfirst($errors->first('password')) }}</div>
@@ -127,7 +127,7 @@
 						  	<div>
                                 <div class="input-group">
 							  		<input type="password" name="password_confirmation" class="form-control {{ $errors->has('password') ? 'border-danger' : '' }}">
-									<button class="input-group-text btn btn-light btn-toggle-password border {{ $errors->has('password') ? 'border-danger' : '' }}"><i class="bi bi-eye-fill"></i></button>
+									<a href="#" class="input-group-text btn btn-light btn-toggle-password border {{ $errors->has('password') ? 'border-danger' : '' }}"><i class="bi bi-eye-fill"></i></a>
                                 </div>
 						  	</div>
 						</div>
