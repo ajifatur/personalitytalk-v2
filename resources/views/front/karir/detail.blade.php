@@ -74,6 +74,7 @@
 			$("[data-pt=status]").html(response.status == 1 ? '<span class="badge bg-success">Aktif</span>' : '<span class="badge bg-danger">Tidak Aktif</span>');
 		},
 		error: function(response) {
+			alert("Karir tidak ditemukan!");
 			window.location.href = "{{ route('site.karir.index') }}";
 		}
 	})
