@@ -72,6 +72,9 @@
 			$("[data-pt=author]").text(response.author);
 			$("[data-pt=date]").text(response.date);
 			$("[data-pt=status]").html(response.status == 1 ? '<span class="badge bg-success">Aktif</span>' : '<span class="badge bg-danger">Tidak Aktif</span>');
+		},
+		error: function(response) {
+			window.location.href = "{{ route('site.karir.index') }}";
 		}
 	})
 </script>
